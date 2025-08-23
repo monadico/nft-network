@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS collections (
 	name TEXT,
 	token_count INTEGER,
 	owner_count INTEGER,
+	total_quantity INTEGER,  # Added for ERC-1155 support
 	processed_at TEXT
 );
 
@@ -62,7 +63,7 @@ def ensure_database_schema():
 		conn.close()
 		log("✅ Database schema created")
 	else:
-		# Check if tables exist
+		# Check if tables exist and migrate if needed
 		conn = sqlite3.connect(DB_PATH)
 		cursor = conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
 		existing_tables = {row[0] for row in cursor.fetchall()}
@@ -79,8 +80,31 @@ def ensure_database_schema():
 					conn.execute(stmt)
 			conn.commit()
 			log("✅ Database schema updated")
+		else:
+			# Check if we need to migrate existing schema
+			migrate_database_schema(conn)
 		
 		conn.close()
+
+
+def migrate_database_schema(conn: sqlite3.Connection):
+	"""Migrate existing database schema to add new columns if needed"""
+	try:
+		# Check if total_quantity column exists in collections table
+		cursor = conn.execute("PRAGMA table_info(collections)")
+		columns = {row[1] for row in cursor.fetchall()}
+		
+		if 'total_quantity' not in columns:
+			log("🔧 Adding total_quantity column to collections table...")
+			conn.execute("ALTER TABLE collections ADD COLUMN total_quantity INTEGER")
+			conn.commit()
+			log("✅ Migration completed: total_quantity column added")
+		else:
+			log("✅ Database schema is up to date")
+			
+	except Exception as e:
+		log(f"⚠️ Migration warning: {e}")
+		# Continue execution even if migration fails
 
 
 class RateLimiter:
@@ -114,7 +138,7 @@ def fetch_tokens_page(limiter: RateLimiter, collection_address: str, offset: int
 		"includeTopBid": "false",
 		"excludeEOA": "false",
 		"includeAttributes": "false",
-		"includeQuantity": "false",
+		"includeQuantity": "true",  # Changed to true to get quantity for ERC-1155
 		"includeDynamicPricing": "false",
 		"includeLastSale": "false",
 		"normalizeRoyalties": "false",
@@ -151,7 +175,7 @@ def fetch_tokens_page(limiter: RateLimiter, collection_address: str, offset: int
 MAX_PAGES_PER_COLLECTION = 300
 
 
-def upsert_collection_holders(conn: sqlite3.Connection, collection_id: str, holder_counts: Dict[str, int], total_tokens: int) -> None:
+def upsert_collection_holders(conn: sqlite3.Connection, collection_id: str, holder_counts: Dict[str, int], total_tokens: int, total_quantity: int) -> None:
 	"""Upsert holders and collection_holders for a collection as a single transaction."""
 	processed_at = datetime.now(timezone.utc).isoformat()
 	with conn:
@@ -167,29 +191,46 @@ def upsert_collection_holders(conn: sqlite3.Connection, collection_id: str, hold
 		
 		# Update collections summary
 		conn.execute(
-			"UPDATE collections SET token_count = ?, owner_count = ?, processed_at = ? WHERE collection_id = ?",
-			(total_tokens, len(holder_counts), processed_at, collection_id),
+			"UPDATE collections SET token_count = ?, owner_count = ?, total_quantity = ?, processed_at = ? WHERE collection_id = ?",
+			(total_tokens, len(holder_counts), total_quantity, processed_at, collection_id),
 		)
 
 
-def parse_owner_from_item(item: Dict) -> str | None:
-	# Expected structure: { "token": { ..., "owner": "0x..." } }
+def parse_owner_from_item(item: Dict) -> Tuple[str | None, int]:
+	# Expected structure: { "token": { ..., "owner": "0x...", "quantity": 5 } }
 	t = item.get("token") if isinstance(item, dict) else None
+	owner = None
+	quantity = 1  # Default quantity for ERC-721
+	
 	if isinstance(t, dict):
 		owner = t.get("owner") or t.get("ownerAddress") or t.get("currentOwner")
-		if isinstance(owner, str):
-			return owner
+		# Get quantity for ERC-1155 tokens
+		if "quantity" in t:
+			quantity = int(t.get("quantity", 1))
+		elif "balance" in t:
+			quantity = int(t.get("balance", 1))
+	
 	# Fallbacks if structure differs
-	for key in ("owner", "ownerAddress", "currentOwner"):
-		val = item.get(key) if isinstance(item, dict) else None
-		if isinstance(val, str):
-			return val
-	return None
+	if not owner:
+		for key in ("owner", "ownerAddress", "currentOwner"):
+			val = item.get(key) if isinstance(item, dict) else None
+			if isinstance(val, str):
+				owner = val
+				break
+	
+	# Also check for quantity at item level
+	if owner and "quantity" in item:
+		quantity = int(item.get("quantity", 1))
+	elif owner and "balance" in item:
+		quantity = int(item.get("balance", 1))
+	
+	return owner, quantity
 
 
-def process_collection(limiter: RateLimiter, conn_path: Path, collection_id: str, name: str | None, token_count_hint: int | None) -> Tuple[str, int, int]:
+def process_collection(limiter: RateLimiter, conn_path: Path, collection_id: str, name: str | None, token_count_hint: int | None) -> Tuple[str, int, int, int]:
 	holder_counts: Dict[str, int] = {}
-	total = 0
+	total_tokens = 0  # Count of unique token IDs
+	total_quantity = 0  # Total quantity across all tokens
 	offset = 0
 	pages = 0
 	log(f"▶ Start collection {collection_id}{f' ({name})' if name else ''}")
@@ -204,14 +245,18 @@ def process_collection(limiter: RateLimiter, conn_path: Path, collection_id: str
 		if not tokens:
 			break
 		for item in tokens:
-			owner = parse_owner_from_item(item)
+			owner, quantity = parse_owner_from_item(item)
 			if owner:
-				holder_counts[owner] = holder_counts.get(owner, 0) + 1
-			total += 1
+				holder_counts[owner] = holder_counts.get(owner, 0) + quantity
+				# Debug logging for ERC-1155 tokens
+				if quantity > 1:
+					log(f"🔍 ERC-1155 detected: {owner} has quantity {quantity}")
+			total_tokens += 1  # Count unique token IDs
+			total_quantity += quantity  # Sum all quantities
 		pages += 1
 
 		# Stop if we've seen as many tokens as expected
-		if token_count_hint is not None and total >= token_count_hint:
+		if token_count_hint is not None and total_tokens >= token_count_hint:
 			log(f"{collection_id}: reached token_count hint {token_count_hint}, stopping pagination")
 			break
 		
@@ -225,10 +270,10 @@ def process_collection(limiter: RateLimiter, conn_path: Path, collection_id: str
 	# Write to DB directly since we're not async anymore
 	conn = sqlite3.connect(conn_path)
 	conn.execute('PRAGMA foreign_keys = ON;')
-	upsert_collection_holders(conn, collection_id, holder_counts, total)
+	upsert_collection_holders(conn, collection_id, holder_counts, total_tokens, total_quantity)
 	conn.close()
-	log(f"✔ Saved to DB {collection_id}: tokens={total}, unique_holders={len(holder_counts)}")
-	return collection_id, total, len(holder_counts)
+	log(f"✔ Saved to DB {collection_id}: tokens={total_tokens}, total_quantity={total_quantity}, unique_holders={len(holder_counts)}")
+	return collection_id, total_tokens, len(holder_counts), total_quantity
 
 
 def main():
@@ -253,9 +298,9 @@ def main():
 	
 	for cid, name, tok in collections:
 		try:
-			cid_, total, holders = process_collection(limiter, DB_PATH, cid, name, tok)
-			log(f"✅ Done {cid_}: tokens={total}, holders={holders}")
-			results.append((cid_, total, holders))
+			cid_, total_tokens, holders, total_quantity = process_collection(limiter, DB_PATH, cid, name, tok)
+			log(f"✅ Done {cid_}: tokens={total_tokens}, total_quantity={total_quantity}, holders={holders}")
+			results.append((cid_, total_tokens, holders))
 		except Exception as e:
 			log(f"❌ {cid}: {e}")
 		finally:
