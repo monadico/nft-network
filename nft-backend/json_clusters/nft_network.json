@@ -1,0 +1,4322 @@
+{
+  "metadata": {
+    "edge_count": 537,
+    "node_count": 50,
+    "threshold": 0,
+    "normalized": false,
+    "description": "Complete network with all edges and nodes (no filtering applied)"
+  },
+  "nodes": [
+    {
+      "id": "0x038b19e8f047d22bea5355ca99d976f7ee02c754",
+      "name": "slmnd",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "name": "Lil chogstars Superstarlist Pass",
+      "size": 895,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.184725
+    },
+    {
+      "id": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "name": "Chogs Mystery Chest",
+      "size": 797,
+      "community": 0,
+      "hierarchical": 7,
+      "kmeans": 4,
+      "degree_centrality": 0.673469,
+      "betweenness_centrality": 0.066327,
+      "eigenvector_centrality": 0.309877
+    },
+    {
+      "id": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "name": "Momo",
+      "size": 540,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.673469,
+      "betweenness_centrality": 0.023231,
+      "eigenvector_centrality": 0.156475
+    },
+    {
+      "id": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "name": "Skrumpets",
+      "size": 492,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.175625
+    },
+    {
+      "id": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "name": "r3tards",
+      "size": 316,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.191651
+    },
+    {
+      "id": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "name": "Spikes",
+      "size": 930,
+      "community": 0,
+      "hierarchical": 5,
+      "kmeans": 2,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.261742
+    },
+    {
+      "id": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "name": "Mondana Baddies Eye Chain",
+      "size": 150,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.673469,
+      "betweenness_centrality": 0.011366,
+      "eigenvector_centrality": 0.102476
+    },
+    {
+      "id": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "name": "r3tardv3rs3",
+      "size": 274,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.146148
+    },
+    {
+      "id": "0x151cf400af08bca390b16582ed6c4f096e4f17eb",
+      "name": "DN",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0x84db60168be10fb2ae274ea84e24cb22ffe11ddd",
+      "name": "Mondana Baddies: Baddie Eye",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.061224,
+      "betweenness_centrality": 0.000935,
+      "eigenvector_centrality": 0.000175
+    },
+    {
+      "id": "0x26c86f2835c114571df2b6ce9ba52296cc0fa6bb",
+      "name": "Lil Chogstars",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "name": "Lost Discs",
+      "size": 211,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.714286,
+      "betweenness_centrality": 0.013676,
+      "eigenvector_centrality": 0.07293
+    },
+    {
+      "id": "0x49d54cd9ca8c5ecadbb346dc6b4e31549f34e405",
+      "name": "Overnads: Whitelist Pass",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.040816,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.000196
+    },
+    {
+      "id": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "name": "Molandaks Mint Pass",
+      "size": 547,
+      "community": 0,
+      "hierarchical": 2,
+      "kmeans": 3,
+      "degree_centrality": 0.714286,
+      "betweenness_centrality": 0.062713,
+      "eigenvector_centrality": 0.125524
+    },
+    {
+      "id": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "name": "Meco Nads",
+      "size": 939,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.693878,
+      "betweenness_centrality": 0.05428,
+      "eigenvector_centrality": 0.174344
+    },
+    {
+      "id": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "name": "RealNads Premint Pass",
+      "size": 844,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 3,
+      "degree_centrality": 0.693878,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.141525
+    },
+    {
+      "id": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "name": "Monad Nurse",
+      "size": 108,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.07464
+    },
+    {
+      "id": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "name": "ROARRR",
+      "size": 871,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.105912
+    },
+    {
+      "id": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "name": "LootGO Looties",
+      "size": 331,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.673469,
+      "betweenness_centrality": 0.035809,
+      "eigenvector_centrality": 0.09837
+    },
+    {
+      "id": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "name": "Sealuminati Testnetooor",
+      "size": 709,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.137224
+    },
+    {
+      "id": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "name": "Blench Pass",
+      "size": 291,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 3,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.127752
+    },
+    {
+      "id": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "name": "Purple Frens",
+      "size": 933,
+      "community": 0,
+      "hierarchical": 4,
+      "kmeans": 1,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.155725
+    },
+    {
+      "id": "0x2ace467d5c55d75cf04ae7b9c7672bc499d8e246",
+      "name": "Monadverse Genesis Hatch",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "name": "Moyaking Pass",
+      "size": 689,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.175788
+    },
+    {
+      "id": "0xa18e1c7c6e8c663c5d835fffd70ef07b482fe884",
+      "name": "Monadverse: Chapter 10",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "name": "Chog Pass",
+      "size": 93,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.367396,
+      "eigenvector_centrality": 0.013453
+    },
+    {
+      "id": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "name": "Katana Pass",
+      "size": 212,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.285714,
+      "betweenness_centrality": 0.349606,
+      "eigenvector_centrality": 0.002532
+    },
+    {
+      "id": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "name": "EGGcellent",
+      "size": 564,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 3,
+      "degree_centrality": 0.714286,
+      "betweenness_centrality": 0.04812,
+      "eigenvector_centrality": 0.136187
+    },
+    {
+      "id": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "name": "NADSA ADMISSION TICKET",
+      "size": 99,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.039399,
+      "eigenvector_centrality": 0.046983
+    },
+    {
+      "id": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "name": "Poply x Molandaks",
+      "size": 197,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.03101,
+      "eigenvector_centrality": 0.037474
+    },
+    {
+      "id": "0xf981561d4d9acbb7259682a0e8b9b3a3d6975116",
+      "name": "Gmonad",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.081633,
+      "betweenness_centrality": 0.046356,
+      "eigenvector_centrality": 0.000317
+    },
+    {
+      "id": "0x3db6c11474893689cdb9d7cdedc251532cadf32b",
+      "name": "Mecha Box Mint Pass",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.020408,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.000145
+    },
+    {
+      "id": "0xa568cabe34c8ca0d2a8671009ae0f6486a314425",
+      "name": "Meowwnads",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.040816,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.000196
+    },
+    {
+      "id": "0x2445db24ce058a63b47f75c46906c2e365d39f4a",
+      "name": "Wonad Life Card",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "name": "Legacy Eggs",
+      "size": 851,
+      "community": 0,
+      "hierarchical": 6,
+      "kmeans": 7,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.28198
+    },
+    {
+      "id": "0xff59f1e14c4f5522158a0cf029f94475ba469458",
+      "name": "Mystery Token",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.061224,
+      "betweenness_centrality": 0.000935,
+      "eigenvector_centrality": 0.000175
+    },
+    {
+      "id": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "name": "The Daks Fantasies",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.122449,
+      "betweenness_centrality": 0.012105,
+      "eigenvector_centrality": 0.000301
+    },
+    {
+      "id": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "name": "Llamao Genesis",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.122449,
+      "betweenness_centrality": 0.012105,
+      "eigenvector_centrality": 0.000301
+    },
+    {
+      "id": "0x5fcbe140aaadbaf4d0b447253b25a715c152b4df",
+      "name": "Wonad Tree of Life Card",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    },
+    {
+      "id": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "name": "HaHa x Mongang Pass",
+      "size": 716,
+      "community": 0,
+      "hierarchical": 1,
+      "kmeans": 3,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.114999
+    },
+    {
+      "id": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "name": "Blocknads",
+      "size": 919,
+      "community": 0,
+      "hierarchical": 8,
+      "kmeans": 6,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.307895
+    },
+    {
+      "id": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "name": "SpiKeys",
+      "size": 172,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.111863,
+      "eigenvector_centrality": 0.020997
+    },
+    {
+      "id": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "name": "TheDaks",
+      "size": 941,
+      "community": 0,
+      "hierarchical": 9,
+      "kmeans": 5,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.332315
+    },
+    {
+      "id": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "name": "Foggy",
+      "size": 866,
+      "community": 0,
+      "hierarchical": 5,
+      "kmeans": 2,
+      "degree_centrality": 0.632653,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.252928
+    },
+    {
+      "id": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "name": "La Mouch",
+      "size": 935,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.174247
+    },
+    {
+      "id": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "name": "Chewy",
+      "size": 785,
+      "community": 0,
+      "hierarchical": 5,
+      "kmeans": 2,
+      "degree_centrality": 0.653061,
+      "betweenness_centrality": 0.034014,
+      "eigenvector_centrality": 0.229192
+    },
+    {
+      "id": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "name": "The10kSquad",
+      "size": 916,
+      "community": 0,
+      "hierarchical": 3,
+      "kmeans": 1,
+      "degree_centrality": 0.612245,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.146751
+    },
+    {
+      "id": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "name": "Meowwnads | OG Pass",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.122449,
+      "betweenness_centrality": 0.012105,
+      "eigenvector_centrality": 0.000301
+    },
+    {
+      "id": "0x66e40f67afd710386379a6bb24d00308f81c183f",
+      "name": "Molandaks",
+      "size": 1,
+      "community": 0,
+      "hierarchical": 0,
+      "kmeans": 0,
+      "degree_centrality": 0.0,
+      "betweenness_centrality": 0.0,
+      "eigenvector_centrality": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "weight": 154,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Chogs Mystery Chest"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "weight": 86,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Momo"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "weight": 73,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Skrumpets"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "weight": 58,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "r3tards"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "weight": 67,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Spikes"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 38,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 52,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 33,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 39,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 46,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 49,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 23,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 30,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 47,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 22,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 48,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 19,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 57,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 6,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 39,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 32,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 13,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 74,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 49,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 80,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 11,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 96,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 58,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 40,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 34,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xd20ef03e432208af083c0fb4e401049f4f29949f",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 30,
+      "source_name": "Lil chogstars Superstarlist Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "weight": 84,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Momo"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "weight": 105,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Skrumpets"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "weight": 102,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "r3tards"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "weight": 147,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Spikes"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 60,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 98,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 29,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x49d54cd9ca8c5ecadbb346dc6b4e31549f34e405",
+      "weight": 1,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Overnads: Whitelist Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 50,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 180,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 67,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 42,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 37,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 52,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 53,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 58,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 64,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 82,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 6,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 48,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 31,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 11,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xa568cabe34c8ca0d2a8671009ae0f6486a314425",
+      "weight": 1,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Meowwnads"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 164,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 40,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 155,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 18,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 184,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 137,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 86,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 109,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xe6b5427b174344fd5cb1e3d5550306b0055473c6",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 58,
+      "source_name": "Chogs Mystery Chest",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "weight": 62,
+      "source_name": "Momo",
+      "target_name": "Skrumpets"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "weight": 52,
+      "source_name": "Momo",
+      "target_name": "r3tards"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "weight": 52,
+      "source_name": "Momo",
+      "target_name": "Spikes"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 26,
+      "source_name": "Momo",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 57,
+      "source_name": "Momo",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 30,
+      "source_name": "Momo",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 35,
+      "source_name": "Momo",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 23,
+      "source_name": "Momo",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 35,
+      "source_name": "Momo",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 18,
+      "source_name": "Momo",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 41,
+      "source_name": "Momo",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 37,
+      "source_name": "Momo",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 25,
+      "source_name": "Momo",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 32,
+      "source_name": "Momo",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 32,
+      "source_name": "Momo",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 54,
+      "source_name": "Momo",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 5,
+      "source_name": "Momo",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "Momo",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 65,
+      "source_name": "Momo",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 20,
+      "source_name": "Momo",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 21,
+      "source_name": "Momo",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xf981561d4d9acbb7259682a0e8b9b3a3d6975116",
+      "weight": 1,
+      "source_name": "Momo",
+      "target_name": "Gmonad"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 55,
+      "source_name": "Momo",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 47,
+      "source_name": "Momo",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 81,
+      "source_name": "Momo",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 11,
+      "source_name": "Momo",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 73,
+      "source_name": "Momo",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 45,
+      "source_name": "Momo",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 39,
+      "source_name": "Momo",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 41,
+      "source_name": "Momo",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xbc8f6824fde979848ad97a52bced2d6ca1842a68",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 34,
+      "source_name": "Momo",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "weight": 75,
+      "source_name": "Skrumpets",
+      "target_name": "r3tards"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "weight": 70,
+      "source_name": "Skrumpets",
+      "target_name": "Spikes"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 36,
+      "source_name": "Skrumpets",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 79,
+      "source_name": "Skrumpets",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 13,
+      "source_name": "Skrumpets",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 33,
+      "source_name": "Skrumpets",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 41,
+      "source_name": "Skrumpets",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 27,
+      "source_name": "Skrumpets",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 22,
+      "source_name": "Skrumpets",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 30,
+      "source_name": "Skrumpets",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 14,
+      "source_name": "Skrumpets",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 37,
+      "source_name": "Skrumpets",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 38,
+      "source_name": "Skrumpets",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 58,
+      "source_name": "Skrumpets",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 40,
+      "source_name": "Skrumpets",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 11,
+      "source_name": "Skrumpets",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 10,
+      "source_name": "Skrumpets",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 21,
+      "source_name": "Skrumpets",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 10,
+      "source_name": "Skrumpets",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 76,
+      "source_name": "Skrumpets",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 22,
+      "source_name": "Skrumpets",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 93,
+      "source_name": "Skrumpets",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 8,
+      "source_name": "Skrumpets",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 92,
+      "source_name": "Skrumpets",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 64,
+      "source_name": "Skrumpets",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 42,
+      "source_name": "Skrumpets",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 56,
+      "source_name": "Skrumpets",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xe8f0635591190fb626f9d13c49b60626561ed145",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 25,
+      "source_name": "Skrumpets",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "weight": 82,
+      "source_name": "r3tards",
+      "target_name": "Spikes"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 48,
+      "source_name": "r3tards",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 67,
+      "source_name": "r3tards",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 14,
+      "source_name": "r3tards",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 16,
+      "source_name": "r3tards",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 37,
+      "source_name": "r3tards",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 39,
+      "source_name": "r3tards",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 48,
+      "source_name": "r3tards",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 21,
+      "source_name": "r3tards",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 30,
+      "source_name": "r3tards",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 33,
+      "source_name": "r3tards",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 37,
+      "source_name": "r3tards",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 29,
+      "source_name": "r3tards",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 39,
+      "source_name": "r3tards",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 6,
+      "source_name": "r3tards",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 20,
+      "source_name": "r3tards",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 14,
+      "source_name": "r3tards",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 5,
+      "source_name": "r3tards",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 76,
+      "source_name": "r3tards",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 20,
+      "source_name": "r3tards",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 86,
+      "source_name": "r3tards",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 10,
+      "source_name": "r3tards",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 128,
+      "source_name": "r3tards",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 135,
+      "source_name": "r3tards",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 54,
+      "source_name": "r3tards",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 65,
+      "source_name": "r3tards",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xed52e0d80f4e7b295df5e622b55eff22d262f6ed",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 29,
+      "source_name": "r3tards",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "weight": 39,
+      "source_name": "Spikes",
+      "target_name": "Mondana Baddies Eye Chain"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 50,
+      "source_name": "Spikes",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 24,
+      "source_name": "Spikes",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 37,
+      "source_name": "Spikes",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 65,
+      "source_name": "Spikes",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 42,
+      "source_name": "Spikes",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 23,
+      "source_name": "Spikes",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 33,
+      "source_name": "Spikes",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 32,
+      "source_name": "Spikes",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 64,
+      "source_name": "Spikes",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 49,
+      "source_name": "Spikes",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 73,
+      "source_name": "Spikes",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 60,
+      "source_name": "Spikes",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 4,
+      "source_name": "Spikes",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "Spikes",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 40,
+      "source_name": "Spikes",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 15,
+      "source_name": "Spikes",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 7,
+      "source_name": "Spikes",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 149,
+      "source_name": "Spikes",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 40,
+      "source_name": "Spikes",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 158,
+      "source_name": "Spikes",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 4,
+      "source_name": "Spikes",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 171,
+      "source_name": "Spikes",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 120,
+      "source_name": "Spikes",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 76,
+      "source_name": "Spikes",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 125,
+      "source_name": "Spikes",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x87e1f1824c9356733a25d6bed6b9c87a3b31e107",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 63,
+      "source_name": "Spikes",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "weight": 29,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "r3tardv3rs3"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x84db60168be10fb2ae274ea84e24cb22ffe11ddd",
+      "weight": 1,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Mondana Baddies: Baddie Eye"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 8,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 3,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 25,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 19,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 28,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 13,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 19,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 17,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 29,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 7,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 29,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 3,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 9,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 11,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 4,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 42,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xff59f1e14c4f5522158a0cf029f94475ba469458",
+      "weight": 1,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Mystery Token"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 13,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 57,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 5,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 58,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 56,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 23,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 26,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xd6421e9c72199e971e5a3cde09214054e1216cd2",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 5,
+      "source_name": "Mondana Baddies Eye Chain",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "weight": 21,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Lost Discs"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 15,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 36,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 20,
+      "source_name": "r3tardv3rs3",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 31,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 24,
+      "source_name": "r3tardv3rs3",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 28,
+      "source_name": "r3tardv3rs3",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 21,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 34,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 18,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 42,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 4,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 35,
+      "source_name": "r3tardv3rs3",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 12,
+      "source_name": "r3tardv3rs3",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 14,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 64,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 34,
+      "source_name": "r3tardv3rs3",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 63,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 12,
+      "source_name": "r3tardv3rs3",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 72,
+      "source_name": "r3tardv3rs3",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 56,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 33,
+      "source_name": "r3tardv3rs3",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 34,
+      "source_name": "r3tardv3rs3",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x2b9ee0a88d69eef1cffe3ea330165e17fd976c3c",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 21,
+      "source_name": "r3tardv3rs3",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x84db60168be10fb2ae274ea84e24cb22ffe11ddd",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 1,
+      "source_name": "Mondana Baddies: Baddie Eye",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0x84db60168be10fb2ae274ea84e24cb22ffe11ddd",
+      "target": "0xff59f1e14c4f5522158a0cf029f94475ba469458",
+      "weight": 1,
+      "source_name": "Mondana Baddies: Baddie Eye",
+      "target_name": "Mystery Token"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "weight": 16,
+      "source_name": "Lost Discs",
+      "target_name": "Molandaks Mint Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 12,
+      "source_name": "Lost Discs",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 36,
+      "source_name": "Lost Discs",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 7,
+      "source_name": "Lost Discs",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 17,
+      "source_name": "Lost Discs",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 28,
+      "source_name": "Lost Discs",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 12,
+      "source_name": "Lost Discs",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 26,
+      "source_name": "Lost Discs",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 11,
+      "source_name": "Lost Discs",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 53,
+      "source_name": "Lost Discs",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 3,
+      "source_name": "Lost Discs",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 49,
+      "source_name": "Lost Discs",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 10,
+      "source_name": "Lost Discs",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 11,
+      "source_name": "Lost Discs",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xf981561d4d9acbb7259682a0e8b9b3a3d6975116",
+      "weight": 1,
+      "source_name": "Lost Discs",
+      "target_name": "Gmonad"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 28,
+      "source_name": "Lost Discs",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "weight": 1,
+      "source_name": "Lost Discs",
+      "target_name": "The Daks Fantasies"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "weight": 1,
+      "source_name": "Lost Discs",
+      "target_name": "Llamao Genesis"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 25,
+      "source_name": "Lost Discs",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 33,
+      "source_name": "Lost Discs",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 4,
+      "source_name": "Lost Discs",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 27,
+      "source_name": "Lost Discs",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 15,
+      "source_name": "Lost Discs",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 17,
+      "source_name": "Lost Discs",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 19,
+      "source_name": "Lost Discs",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 11,
+      "source_name": "Lost Discs",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xcd719c599ebc51193c5c97cbe188f43c8c4c8745",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "Lost Discs",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0x49d54cd9ca8c5ecadbb346dc6b4e31549f34e405",
+      "target": "0xa568cabe34c8ca0d2a8671009ae0f6486a314425",
+      "weight": 1,
+      "source_name": "Overnads: Whitelist Pass",
+      "target_name": "Meowwnads"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "weight": 102,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Meco Nads"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 30,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 5,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 40,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 14,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 30,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 30,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 190,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 26,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 6,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 36,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 7,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 16,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 44,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "weight": 1,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "The Daks Fantasies"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "weight": 1,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Llamao Genesis"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 20,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 41,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 10,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 45,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 35,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 35,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 42,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 36,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x6341c537a6fc563029d8e8caa87da37f227358f4",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "Molandaks Mint Pass",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "weight": 34,
+      "source_name": "Meco Nads",
+      "target_name": "RealNads Premint Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 14,
+      "source_name": "Meco Nads",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 37,
+      "source_name": "Meco Nads",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 28,
+      "source_name": "Meco Nads",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 34,
+      "source_name": "Meco Nads",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 26,
+      "source_name": "Meco Nads",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 84,
+      "source_name": "Meco Nads",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 36,
+      "source_name": "Meco Nads",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 2,
+      "source_name": "Meco Nads",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 11,
+      "source_name": "Meco Nads",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 23,
+      "source_name": "Meco Nads",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 7,
+      "source_name": "Meco Nads",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 9,
+      "source_name": "Meco Nads",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 69,
+      "source_name": "Meco Nads",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xff59f1e14c4f5522158a0cf029f94475ba469458",
+      "weight": 1,
+      "source_name": "Meco Nads",
+      "target_name": "Mystery Token"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 33,
+      "source_name": "Meco Nads",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 73,
+      "source_name": "Meco Nads",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 3,
+      "source_name": "Meco Nads",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 83,
+      "source_name": "Meco Nads",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 59,
+      "source_name": "Meco Nads",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 34,
+      "source_name": "Meco Nads",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 51,
+      "source_name": "Meco Nads",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x8af130613bd8a7c714a43def3454a0f5ddf2344e",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 39,
+      "source_name": "Meco Nads",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "weight": 10,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Monad Nurse"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 34,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 39,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 24,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 37,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 25,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 81,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 3,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 48,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 12,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 8,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 62,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "weight": 1,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "The Daks Fantasies"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "weight": 1,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Llamao Genesis"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 55,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 72,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 5,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 77,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 59,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 38,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 42,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 26,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xb981a81b45f604f82bd502a35c6dbe25dd2e8b8d",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "RealNads Premint Pass",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "weight": 6,
+      "source_name": "Monad Nurse",
+      "target_name": "ROARRR"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 12,
+      "source_name": "Monad Nurse",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 12,
+      "source_name": "Monad Nurse",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 21,
+      "source_name": "Monad Nurse",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 8,
+      "source_name": "Monad Nurse",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 13,
+      "source_name": "Monad Nurse",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 1,
+      "source_name": "Monad Nurse",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 11,
+      "source_name": "Monad Nurse",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 6,
+      "source_name": "Monad Nurse",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 3,
+      "source_name": "Monad Nurse",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 31,
+      "source_name": "Monad Nurse",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 7,
+      "source_name": "Monad Nurse",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 32,
+      "source_name": "Monad Nurse",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 3,
+      "source_name": "Monad Nurse",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 45,
+      "source_name": "Monad Nurse",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 37,
+      "source_name": "Monad Nurse",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 20,
+      "source_name": "Monad Nurse",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 27,
+      "source_name": "Monad Nurse",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x8827a10506653af9de490e160ad134e6293d3b47",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 11,
+      "source_name": "Monad Nurse",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "weight": 25,
+      "source_name": "ROARRR",
+      "target_name": "LootGO Looties"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 29,
+      "source_name": "ROARRR",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 24,
+      "source_name": "ROARRR",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 36,
+      "source_name": "ROARRR",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 37,
+      "source_name": "ROARRR",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 9,
+      "source_name": "ROARRR",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "ROARRR",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 59,
+      "source_name": "ROARRR",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 9,
+      "source_name": "ROARRR",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 15,
+      "source_name": "ROARRR",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 38,
+      "source_name": "ROARRR",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 44,
+      "source_name": "ROARRR",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 45,
+      "source_name": "ROARRR",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 11,
+      "source_name": "ROARRR",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 51,
+      "source_name": "ROARRR",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 35,
+      "source_name": "ROARRR",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 31,
+      "source_name": "ROARRR",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 32,
+      "source_name": "ROARRR",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x9436689d617dd6696f94cd3d8bbdd234f30d2a52",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 30,
+      "source_name": "ROARRR",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "weight": 12,
+      "source_name": "LootGO Looties",
+      "target_name": "Sealuminati Testnetooor"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 27,
+      "source_name": "LootGO Looties",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 10,
+      "source_name": "LootGO Looties",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 55,
+      "source_name": "LootGO Looties",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 1,
+      "source_name": "LootGO Looties",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 2,
+      "source_name": "LootGO Looties",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 32,
+      "source_name": "LootGO Looties",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 10,
+      "source_name": "LootGO Looties",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 8,
+      "source_name": "LootGO Looties",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xf981561d4d9acbb7259682a0e8b9b3a3d6975116",
+      "weight": 1,
+      "source_name": "LootGO Looties",
+      "target_name": "Gmonad"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 40,
+      "source_name": "LootGO Looties",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 40,
+      "source_name": "LootGO Looties",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 42,
+      "source_name": "LootGO Looties",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 4,
+      "source_name": "LootGO Looties",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 42,
+      "source_name": "LootGO Looties",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 30,
+      "source_name": "LootGO Looties",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 23,
+      "source_name": "LootGO Looties",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 28,
+      "source_name": "LootGO Looties",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xe047e7501ac25d3003a8da147648b088d9df0b07",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 17,
+      "source_name": "LootGO Looties",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "weight": 18,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Blench Pass"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 68,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 32,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 1,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 27,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 5,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 4,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 62,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 18,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 77,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 3,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 71,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 71,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 58,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 62,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x4870e911b1986c6822a171cdf91806c3d44ce235",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 52,
+      "source_name": "Sealuminati Testnetooor",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "weight": 24,
+      "source_name": "Blench Pass",
+      "target_name": "Purple Frens"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 58,
+      "source_name": "Blench Pass",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 3,
+      "source_name": "Blench Pass",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 2,
+      "source_name": "Blench Pass",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 48,
+      "source_name": "Blench Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 9,
+      "source_name": "Blench Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 5,
+      "source_name": "Blench Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 49,
+      "source_name": "Blench Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 36,
+      "source_name": "Blench Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 72,
+      "source_name": "Blench Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 7,
+      "source_name": "Blench Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 65,
+      "source_name": "Blench Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 49,
+      "source_name": "Blench Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 27,
+      "source_name": "Blench Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 34,
+      "source_name": "Blench Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x46c66c40711a2953d1768926e53134c7ab272cd5",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 23,
+      "source_name": "Blench Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "weight": 27,
+      "source_name": "Purple Frens",
+      "target_name": "Moyaking Pass"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 6,
+      "source_name": "Purple Frens",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 28,
+      "source_name": "Purple Frens",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 3,
+      "source_name": "Purple Frens",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 20,
+      "source_name": "Purple Frens",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 58,
+      "source_name": "Purple Frens",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 22,
+      "source_name": "Purple Frens",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 58,
+      "source_name": "Purple Frens",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 14,
+      "source_name": "Purple Frens",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 74,
+      "source_name": "Purple Frens",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 51,
+      "source_name": "Purple Frens",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 48,
+      "source_name": "Purple Frens",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 82,
+      "source_name": "Purple Frens",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xc5c9425d733b9f769593bd2814b6301916f91271",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 56,
+      "source_name": "Purple Frens",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "weight": 4,
+      "source_name": "Moyaking Pass",
+      "target_name": "Chog Pass"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "Moyaking Pass",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 79,
+      "source_name": "Moyaking Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 24,
+      "source_name": "Moyaking Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 21,
+      "source_name": "Moyaking Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 81,
+      "source_name": "Moyaking Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 71,
+      "source_name": "Moyaking Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 103,
+      "source_name": "Moyaking Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 6,
+      "source_name": "Moyaking Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 90,
+      "source_name": "Moyaking Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 52,
+      "source_name": "Moyaking Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 40,
+      "source_name": "Moyaking Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 48,
+      "source_name": "Moyaking Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xf105209830ebcaef5f1b85fb3e7f44256d1af2e3",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 47,
+      "source_name": "Moyaking Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "weight": 1,
+      "source_name": "Chog Pass",
+      "target_name": "Katana Pass"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 6,
+      "source_name": "Chog Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 1,
+      "source_name": "Chog Pass",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 4,
+      "source_name": "Chog Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 6,
+      "source_name": "Chog Pass",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 5,
+      "source_name": "Chog Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 1,
+      "source_name": "Chog Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 27,
+      "source_name": "Chog Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 5,
+      "source_name": "Chog Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 3,
+      "source_name": "Chog Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 4,
+      "source_name": "Chog Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x7370a0a9e9a833bcd071b38fc25184e7afb57aff",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 1,
+      "source_name": "Chog Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "target": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "weight": 1,
+      "source_name": "Katana Pass",
+      "target_name": "EGGcellent"
+    },
+    {
+      "source": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 1,
+      "source_name": "Katana Pass",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 4,
+      "source_name": "Katana Pass",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x553b586f132b6bc2aafec9661d167300262fffdb",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 1,
+      "source_name": "Katana Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "weight": 8,
+      "source_name": "EGGcellent",
+      "target_name": "NADSA ADMISSION TICKET"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 31,
+      "source_name": "EGGcellent",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 54,
+      "source_name": "EGGcellent",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "weight": 1,
+      "source_name": "EGGcellent",
+      "target_name": "The Daks Fantasies"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "weight": 1,
+      "source_name": "EGGcellent",
+      "target_name": "Llamao Genesis"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 68,
+      "source_name": "EGGcellent",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 79,
+      "source_name": "EGGcellent",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 11,
+      "source_name": "EGGcellent",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 68,
+      "source_name": "EGGcellent",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 39,
+      "source_name": "EGGcellent",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 32,
+      "source_name": "EGGcellent",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 39,
+      "source_name": "EGGcellent",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 54,
+      "source_name": "EGGcellent",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x7da93750de078bfbbab0dd30635448e9ec7fb8f0",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "EGGcellent",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "weight": 1,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "Poply x Molandaks"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 13,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 8,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 21,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 2,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 24,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 16,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 12,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 9,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x006300ab0e8969c88dcf2e7c070e6c29b6081c1f",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 5,
+      "source_name": "NADSA ADMISSION TICKET",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "weight": 14,
+      "source_name": "Poply x Molandaks",
+      "target_name": "Legacy Eggs"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 15,
+      "source_name": "Poply x Molandaks",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 18,
+      "source_name": "Poply x Molandaks",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 5,
+      "source_name": "Poply x Molandaks",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 11,
+      "source_name": "Poply x Molandaks",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 12,
+      "source_name": "Poply x Molandaks",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 3,
+      "source_name": "Poply x Molandaks",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 11,
+      "source_name": "Poply x Molandaks",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x9b72654fca42e3415a0eba357f90fa34ef0b14e4",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 12,
+      "source_name": "Poply x Molandaks",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xf981561d4d9acbb7259682a0e8b9b3a3d6975116",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 1,
+      "source_name": "Gmonad",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x3db6c11474893689cdb9d7cdedc251532cadf32b",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 1,
+      "source_name": "Mecha Box Mint Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "weight": 35,
+      "source_name": "Legacy Eggs",
+      "target_name": "HaHa x Mongang Pass"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 177,
+      "source_name": "Legacy Eggs",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 2,
+      "source_name": "Legacy Eggs",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 190,
+      "source_name": "Legacy Eggs",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 149,
+      "source_name": "Legacy Eggs",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 74,
+      "source_name": "Legacy Eggs",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 119,
+      "source_name": "Legacy Eggs",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xa980f072bc06d67faec2b03a8ada0d6c9d0da9f8",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 55,
+      "source_name": "Legacy Eggs",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "target": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "weight": 1,
+      "source_name": "The Daks Fantasies",
+      "target_name": "Llamao Genesis"
+    },
+    {
+      "source": "0x4e88056e13de12bde065589e501033227d8188e6",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "The Daks Fantasies",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0xb0a663cf4853e67221fee43322fda402e21debfc",
+      "target": "0xd60c64487d581d5eb2b15f221bd6d8187a9a4aef",
+      "weight": 1,
+      "source_name": "Llamao Genesis",
+      "target_name": "Meowwnads | OG Pass"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "weight": 56,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "Blocknads"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 5,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 49,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 34,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 22,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 38,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xfe5b5af24280af7ea190a41d0240fe30c46f1c40",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 27,
+      "source_name": "HaHa x Mongang Pass",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "weight": 2,
+      "source_name": "Blocknads",
+      "target_name": "SpiKeys"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 205,
+      "source_name": "Blocknads",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 140,
+      "source_name": "Blocknads",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 95,
+      "source_name": "Blocknads",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 142,
+      "source_name": "Blocknads",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x6ed438b2a8eff227e7e54b5324926941b140eea0",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 87,
+      "source_name": "Blocknads",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "target": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "weight": 4,
+      "source_name": "SpiKeys",
+      "target_name": "TheDaks"
+    },
+    {
+      "source": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 4,
+      "source_name": "SpiKeys",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 6,
+      "source_name": "SpiKeys",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 2,
+      "source_name": "SpiKeys",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0xbb406139138401f4475ca5cf2d7152847159eb7a",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 3,
+      "source_name": "SpiKeys",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "target": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "weight": 165,
+      "source_name": "TheDaks",
+      "target_name": "Foggy"
+    },
+    {
+      "source": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 108,
+      "source_name": "TheDaks",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 172,
+      "source_name": "TheDaks",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x78ed9a576519024357ab06d9834266a04c9634b7",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 93,
+      "source_name": "TheDaks",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "target": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "weight": 89,
+      "source_name": "Foggy",
+      "target_name": "La Mouch"
+    },
+    {
+      "source": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 82,
+      "source_name": "Foggy",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x0f2f2da004acc38f05858f9dbc0320db64c1b6c9",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 44,
+      "source_name": "Foggy",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "target": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "weight": 70,
+      "source_name": "La Mouch",
+      "target_name": "Chewy"
+    },
+    {
+      "source": "0x5a21b0f4a4f9b54e16282b6ed5ad014b3c77186f",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 60,
+      "source_name": "La Mouch",
+      "target_name": "The10kSquad"
+    },
+    {
+      "source": "0x88bbcba96a52f310497774e7fd5ebadf0ece21fb",
+      "target": "0x3a9454c1b4c84d1861bb1209a647c834d137b442",
+      "weight": 83,
+      "source_name": "Chewy",
+      "target_name": "The10kSquad"
+    }
+  ]
+}

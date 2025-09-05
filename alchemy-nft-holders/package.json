@@ -1,0 +1,17 @@
+{
+  "name": "alchemy-nft-holders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alchemy-sdk": "^3.6.3",
+    "dotenv": "^17.2.2",
+    "sqlite3": "^5.1.7"
+  }
+}

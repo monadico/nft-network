@@ -4,3 +4,5 @@ numpy>=1.21.0
 scipy>=1.9.0
 scikit-learn>=1.1.0
 python-louvain>=0.16
+requests>=2.25.0
+web3>=6.0.0
