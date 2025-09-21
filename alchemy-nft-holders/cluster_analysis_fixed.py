@@ -18,16 +18,75 @@ from pathlib import Path
 from typing import Dict, Set, Tuple, List
 from datetime import datetime
 from collections import Counter
+from scipy import stats
+from scipy.spatial.distance import squareform
+from scipy.cluster.hierarchy import linkage, dendrogram, cophenet
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+from statsmodels.stats.multitest import multipletests
 
 # Configuration
 DB_PATH = Path('data/holders.sqlite')
 OUTPUT_DIR = Path('analysis_results')
-SIMILARITY_THRESHOLD = 0.01  # Minimum Jaccard similarity to create an edge
+SIMILARITY_THRESHOLD = 0.05  # Minimum similarity to create an edge (increased default)
+PROJECTION_METHOD = 'hypergeometric'  # Options: 'jaccard', 'hypergeometric', 'tfidf'
+USE_BH_CORRECTION = True  # Benjamini-Hochberg correction for hypergeometric p-values
 
 def setup_output_directory():
     """Create output directory for analysis results"""
     OUTPUT_DIR.mkdir(exist_ok=True)
     print(f"Output directory: {OUTPUT_DIR}")
+
+def detect_outliers_zscore(collections_df: pd.DataFrame, z_threshold: float = 3.0) -> Tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Detect outliers in collection holder counts using z-score method
+    
+    Args:
+        collections_df: DataFrame with collection data
+        z_threshold: Z-score threshold for outlier detection (default: 3.0)
+        
+    Returns:
+        Tuple of (filtered_df_without_outliers, outliers_df)
+    """
+    print(f"\nOutlier Detection (Z-score threshold: {z_threshold}):")
+    
+    # Calculate z-scores for owner_count
+    holder_counts = collections_df['owner_count'].values
+    mean_holders = np.mean(holder_counts)
+    std_holders = np.std(holder_counts)
+    
+    # Handle case where std is 0
+    if std_holders == 0:
+        print("   Warning: No variation in holder counts, no outliers to remove")
+        return collections_df.copy(), pd.DataFrame()
+    
+    z_scores = (holder_counts - mean_holders) / std_holders
+    collections_df_with_zscore = collections_df.copy()
+    collections_df_with_zscore['z_score'] = z_scores
+    
+    # Identify outliers (|z-score| > threshold)
+    outlier_mask = np.abs(z_scores) > z_threshold
+    outliers_df = collections_df_with_zscore[outlier_mask].copy()
+    filtered_df = collections_df_with_zscore[~outlier_mask].copy()
+    
+    print(f"   Total collections: {len(collections_df)}")
+    print(f"   Mean holder count: {mean_holders:.1f}")
+    print(f"   Std holder count: {std_holders:.1f}")
+    print(f"   Outliers detected: {len(outliers_df)} ({len(outliers_df)/len(collections_df)*100:.1f}%)")
+    print(f"   Remaining collections: {len(filtered_df)}")
+    
+    if len(outliers_df) > 0:
+        print("   Outlier collections:")
+        for _, outlier in outliers_df.iterrows():
+            print(f"     {outlier['name'][:40]:40} | "
+                  f"Holders: {outlier['owner_count']:6,} | "
+                  f"Z-score: {outlier['z_score']:6.2f}")
+    
+    # Remove z_score column from final dataframes
+    filtered_df = filtered_df.drop('z_score', axis=1)
+    outliers_df = outliers_df.drop('z_score', axis=1) if len(outliers_df) > 0 else outliers_df
+    
+    return filtered_df, outliers_df
 
 def load_collection_data() -> pd.DataFrame:
     """
@@ -113,6 +172,118 @@ def calculate_jaccard_similarity(set_a: Set[str], set_b: Set[str]) -> float:
     
     return intersection / union
 
+def calculate_hypergeometric_pvalue(set_a: Set[str], set_b: Set[str], total_population: int) -> float:
+    """
+    Calculate hypergeometric p-value for overlap significance
+    
+    Tests null hypothesis: overlap is due to random chance
+    Uses hypergeometric distribution to compute exact p-value
+    
+    Args:
+        set_a: First set of holders
+        set_b: Second set of holders  
+        total_population: Total number of unique holders across all collections
+        
+    Returns:
+        p-value for significance of overlap (lower = more significant)
+    """
+    overlap = len(set_a.intersection(set_b))
+    size_a = len(set_a)
+    size_b = len(set_b)
+    
+    if overlap == 0 or size_a == 0 or size_b == 0:
+        return 1.0
+    
+    # Hypergeometric test: P(X >= overlap) where X ~ Hypergeometric(total_pop, size_a, size_b)
+    # This is the probability of seeing at least 'overlap' shared holders by chance
+    pvalue = stats.hypergeom.sf(overlap - 1, total_population, size_a, size_b)
+    return min(pvalue, 1.0)
+
+def calculate_tfidf_similarity(collection_holders: Dict[str, Set[str]], col_a: str, col_b: str) -> float:
+    """
+    Calculate TF-IDF cosine similarity between collections
+    
+    Treats each collection as a document and holders as terms
+    Rare holders get higher weights (inverse document frequency)
+    
+    Args:
+        collection_holders: Full holder data for all collections
+        col_a: First collection ID
+        col_b: Second collection ID
+        
+    Returns:
+        Cosine similarity score (0.0 to 1.0)
+    """
+    # Create document corpus (collection -> space-separated holder addresses)
+    collection_ids = [col_a, col_b]
+    documents = []
+    
+    for col_id in collection_ids:
+        holders = collection_holders.get(col_id, set())
+        # Join holder addresses with spaces to create a "document"
+        doc = ' '.join(holders) if holders else ''
+        documents.append(doc)
+    
+    if not documents[0] or not documents[1]:
+        return 0.0
+    
+    # Calculate TF-IDF vectors and cosine similarity
+    try:
+        tfidf = TfidfVectorizer(token_pattern=r'\b0x[a-fA-F0-9]{40}\b')  # Ethereum addresses
+        tfidf_matrix = tfidf.fit_transform(documents)
+        
+        if tfidf_matrix.shape[1] == 0:  # No valid tokens
+            return 0.0
+            
+        similarity_matrix = cosine_similarity(tfidf_matrix)
+        return float(similarity_matrix[0, 1])
+        
+    except (ValueError, AttributeError):
+        return 0.0
+
+def calculate_collection_similarity(set_a: Set[str], set_b: Set[str], 
+                                  collection_holders: Dict[str, Set[str]], 
+                                  col_a: str, col_b: str, 
+                                  total_population: int, 
+                                  method: str = 'jaccard') -> Tuple[float, float]:
+    """
+    Calculate similarity between two collections using specified method
+    
+    Args:
+        set_a, set_b: Holder sets for the collections
+        collection_holders: Full holder data for TF-IDF calculation
+        col_a, col_b: Collection IDs for TF-IDF calculation  
+        total_population: Total unique holders for hypergeometric test
+        method: 'jaccard', 'hypergeometric', or 'tfidf'
+        
+    Returns:
+        Tuple of (similarity_score, significance_pvalue)
+    """
+    if method == 'jaccard':
+        similarity = calculate_jaccard_similarity(set_a, set_b)
+        # For Jaccard, use hypergeometric p-value for significance
+        pvalue = calculate_hypergeometric_pvalue(set_a, set_b, total_population)
+        return similarity, pvalue
+        
+    elif method == 'hypergeometric':
+        # For hypergeometric method, use negative log p-value as similarity score
+        pvalue = calculate_hypergeometric_pvalue(set_a, set_b, total_population)
+        # Transform p-value to similarity score: -log10(p) normalized
+        if pvalue > 0:
+            similarity = min(-np.log10(pvalue) / 10.0, 1.0)  # Cap at 1.0
+        else:
+            similarity = 1.0
+        return similarity, pvalue
+        
+    elif method == 'tfidf':
+        similarity = calculate_tfidf_similarity(collection_holders, col_a, col_b)
+        # For TF-IDF, use hypergeometric p-value for significance testing
+        pvalue = calculate_hypergeometric_pvalue(set_a, set_b, total_population)
+        return similarity, pvalue
+        
+    else:
+        raise ValueError(f"Unknown similarity method: {method}")
+
 def build_similarity_graph(collections_df: pd.DataFrame, collection_holders: Dict[str, Set[str]]) -> nx.Graph:
     """
     Build a weighted graph representing collection relationships
@@ -120,7 +291,7 @@ def build_similarity_graph(collections_df: pd.DataFrame, collection_holders: Dic
     GRAPH STRUCTURE:
     - Nodes: NFT collections (collection_id)
     - Edges: Shared holder relationships
-    - Weights: Jaccard similarity coefficient
+    - Weights: Similarity scores (method-dependent)
     
     Args:
         collections_df: Collection metadata
@@ -130,7 +301,14 @@ def build_similarity_graph(collections_df: pd.DataFrame, collection_holders: Dic
         NetworkX Graph with weighted edges
     """
     print("Building collection similarity graph...")
-    print(f"   Method: Jaccard similarity (threshold: {SIMILARITY_THRESHOLD})")
+    print(f"   Method: {PROJECTION_METHOD} (threshold: {SIMILARITY_THRESHOLD})")
+    
+    # Calculate total unique holders for hypergeometric testing
+    all_holders = set()
+    for holders in collection_holders.values():
+        all_holders.update(holders)
+    total_population = len(all_holders)
+    print(f"   Total unique holder population: {total_population}")
     
     # Initialize empty graph
     G = nx.Graph()
@@ -146,6 +324,8 @@ def build_similarity_graph(collections_df: pd.DataFrame, collection_holders: Dic
     collections = list(collections_df['collection_id'])
     edges_added = 0
     total_comparisons = len(collections) * (len(collections) - 1) // 2
+    pvalues = []  # For multiple testing correction
+    edge_data = []  # Store edge info for BH correction
     
     print(f"   Computing {total_comparisons} pairwise similarities...")
     
@@ -159,20 +339,60 @@ def build_similarity_graph(collections_df: pd.DataFrame, collection_holders: Dic
             if not holders_a or not holders_b:
                 continue
             
-            # Calculate similarity
-            similarity = calculate_jaccard_similarity(holders_a, holders_b)
+            # Calculate similarity using configured method
+            similarity, pvalue = calculate_collection_similarity(
+                holders_a, holders_b, collection_holders, 
+                collection_a, collection_b, total_population, 
+                method=PROJECTION_METHOD
+            )
             
-            # Add edge if similarity exceeds threshold
-            if similarity >= SIMILARITY_THRESHOLD:
-                G.add_edge(collection_a, collection_b, 
-                          weight=similarity,
-                          shared_holders=len(holders_a.intersection(holders_b)))
-                edges_added += 1
+            # Store for potential multiple testing correction
+            edge_data.append({
+                'collection_a': collection_a,
+                'collection_b': collection_b,
+                'similarity': similarity,
+                'pvalue': pvalue,
+                'shared_holders': len(holders_a.intersection(holders_b))
+            })
+            pvalues.append(pvalue)
+    
+    # Apply Benjamini-Hochberg correction if using hypergeometric method
+    if PROJECTION_METHOD == 'hypergeometric' and USE_BH_CORRECTION and pvalues:
+        print(f"   Applying Benjamini-Hochberg correction to {len(pvalues)} p-values...")
+        rejected, corrected_pvals, alpha_sidak, alpha_bonf = multipletests(pvalues, method='fdr_bh')
+        
+        # Update edge data with corrected p-values
+        for i, edge in enumerate(edge_data):
+            edge['corrected_pvalue'] = corrected_pvals[i]
+            edge['significant'] = rejected[i]
+    else:
+        # No correction - mark all as non-significant for consistency
+        for edge in edge_data:
+            edge['corrected_pvalue'] = edge['pvalue']
+            edge['significant'] = False
+    
+    # Add edges based on similarity threshold
+    for edge in edge_data:
+        if edge['similarity'] >= SIMILARITY_THRESHOLD:
+            G.add_edge(
+                edge['collection_a'], 
+                edge['collection_b'],
+                weight=edge['similarity'],
+                pvalue=edge['pvalue'],
+                corrected_pvalue=edge['corrected_pvalue'],
+                significant=edge['significant'],
+                shared_holders=edge['shared_holders']
+            )
+            edges_added += 1
     
     print(f"Graph construction complete:")
     print(f"   Nodes (collections): {G.number_of_nodes()}")
     print(f"   Edges (relationships): {G.number_of_edges()}")
     print(f"   Edge density: {nx.density(G):.4f}")
+    
+    if PROJECTION_METHOD == 'hypergeometric' and USE_BH_CORRECTION:
+        significant_edges = sum(1 for edge in edge_data if edge['significant'])
+        print(f"   Significant edges (BH corrected): {significant_edges}")
     
     return G
 
@@ -286,16 +506,27 @@ def analyze_eigenvector_centrality(G: nx.Graph, collections_df: pd.DataFrame) ->
     print("   Method: Measures connections to other influential collections")
     print("   Interpretation: Higher scores = connected to important holder hubs")
     
+    # Check if graph is connected for stable eigenvector centrality
+    if not nx.is_connected(G):
+        print("   Warning: Graph is disconnected, using largest connected component")
+        largest_cc = max(nx.connected_components(G), key=len)
+        G_connected = G.subgraph(largest_cc).copy()
+        print(f"   Connected subgraph: {G_connected.number_of_nodes()}/{G.number_of_nodes()} nodes")
+    else:
+        G_connected = G
+    
     try:
-        # Calculate unweighted eigenvector centrality
-        unweighted_eigenvector = nx.eigenvector_centrality(G, max_iter=1000)
+        # Calculate centralities on connected component
+        unweighted_eigenvector_cc = nx.eigenvector_centrality(G_connected, max_iter=1000)
+        weighted_eigenvector_cc = nx.eigenvector_centrality(G_connected, weight='weight', max_iter=1000)
         
-        # Calculate weighted eigenvector centrality
-        weighted_eigenvector = nx.eigenvector_centrality(G, weight='weight', max_iter=1000)
+        # Map back to full node set (missing nodes get 0.0)
+        unweighted_eigenvector = {node: unweighted_eigenvector_cc.get(node, 0.0) for node in G.nodes()}
+        weighted_eigenvector = {node: weighted_eigenvector_cc.get(node, 0.0) for node in G.nodes()}
         
     except nx.NetworkXError as e:
         print(f"   Warning: Eigenvector centrality computation failed: {e}")
-        print("   This can happen with disconnected graphs or numerical issues")
+        print("   This can happen with numerical issues in eigenvalue computation")
         # Fallback to zeros
         unweighted_eigenvector = {node: 0.0 for node in G.nodes()}
         weighted_eigenvector = {node: 0.0 for node in G.nodes()}
@@ -981,13 +1212,18 @@ def validate_centrality_significance(G: nx.Graph, collections_df: pd.DataFrame, 
             except nx.NetworkXError:
                 continue
             
-            # Map back to original node IDs (configuration model uses integer IDs)
-            node_mapping = dict(zip(null_G.nodes(), collections_in_graph[:null_G.number_of_nodes()]))
+            # Map back to original node IDs (configuration model uses integer IDs 0,1,2,...)
+            # Need to create proper mapping from null graph nodes to original collection IDs
+            null_nodes = sorted(null_G.nodes())  # This gives [0, 1, 2, ..., n-1]
+            original_nodes = collections_in_graph  # Original collection IDs
             
-            for null_node, orig_node in node_mapping.items():
-                if orig_node in collections_in_graph:
-                    null_degree_dist[orig_node].append(null_degree.get(null_node, 0))
-                    null_eigenvector_dist[orig_node].append(null_eigenvector.get(null_node, 0))
+            # Create mapping: null_node_id -> original_collection_id
+            node_mapping = dict(zip(null_nodes, original_nodes))
+            
+            for null_node in null_nodes:
+                orig_node = node_mapping[null_node]
+                null_degree_dist[orig_node].append(null_degree.get(null_node, 0))
+                null_eigenvector_dist[orig_node].append(null_eigenvector.get(null_node, 0))
             
             successful_nulls += 1
             
@@ -1000,7 +1236,8 @@ def validate_centrality_significance(G: nx.Graph, collections_df: pd.DataFrame, 
     significance_results = []
     for node in collections_in_graph:
         if len(null_degree_dist[node]) > 0:
-            # Empirical p-values (one-tailed test: obs >= null)
+            # Empirical p-values (one-tailed test: fraction of nulls >= observed)
+            # For significance testing, we want P(null >= observed) to test if observed is unusually high
             degree_p = np.mean([null >= obs_degree[node] for null in null_degree_dist[node]])
             eigenvector_p = np.mean([null >= obs_eigenvector[node] for null in null_eigenvector_dist[node]])
             
@@ -1419,11 +1656,14 @@ def analyze_hierarchical_clustering(G: nx.Graph, collections_df: pd.DataFrame) -
         
         # Optional: Create linkage matrix for dendrogram analysis
         try:
-            Z = linkage(dist_matrix, method='average', metric='precomputed')
+            # Convert full distance matrix to condensed form for scipy linkage
+            from scipy.spatial.distance import squareform
+            condensed_dist = squareform(dist_matrix, checks=False)
+            Z = linkage(condensed_dist, method='average')
             print(f"     Dendrogram linkage computed (height range: {Z[:, 2].min():.3f} - {Z[:, 2].max():.3f})")
-        except:
+        except Exception as e:
             Z = None
-            print("     Dendrogram computation skipped")
+            print(f"     Dendrogram computation failed: {e}")
         
     except Exception as e:
         print(f"   Error in hierarchical clustering: {e}")
@@ -1614,7 +1854,8 @@ def validate_community_modularity(G: nx.Graph, louvain_partition: dict, gn_commu
     
     print(f"   Successful null models: {successful_nulls}/{n_null}")
     
-    # Calculate p-values
+    # Calculate p-values (one-tailed: fraction of nulls >= observed)
+    # For modularity, we test if observed is significantly higher than null
     louvain_p = np.mean([null >= mod_louvain for null in null_mod_louvain]) if null_mod_louvain else 1.0
     gn_p = np.mean([null >= mod_gn for null in null_mod_gn]) if null_mod_gn else 1.0
     
@@ -2472,8 +2713,10 @@ def validate_hierarchical_clustering(G: nx.Graph, hierarchical_communities: List
     
     try:
         # Compute linkage matrix for cophenetic correlation
-        Z = linkage(dist_matrix, method='average', metric='precomputed')
-        cophenetic_corr, _ = cophenet(Z, dist_matrix.ravel())
+        # Convert full distance matrix to condensed form
+        condensed_dist = squareform(dist_matrix, checks=False)
+        Z = linkage(condensed_dist, method='average')
+        cophenetic_corr, _ = cophenet(Z, condensed_dist)
         
         def interpret_cophenetic(corr):
             if corr > 0.8:
@@ -2717,6 +2960,14 @@ def validate_all_methods_consensus(G: nx.Graph, louvain_partition: dict, gn_comm
     
     labels_list = [labels_louvain, labels_gn, labels_spectral, labels_hierarchical]
     
+    # Calculate community counts for each method
+    community_counts = {
+        'Louvain': len(set(labels_louvain)) if labels_louvain else 0,
+        'Girvan-Newman': len(gn_communities) if gn_communities else 0,
+        'Spectral': len(spectral_communities) if spectral_communities else 0,
+        'Hierarchical': len(hierarchical_communities) if hierarchical_communities else 0
+    }
+    
     # Calculate modularity for all methods (with error handling)
     modularities = {}
     
@@ -2870,78 +3121,78 @@ def save_results(degree_results_df: pd.DataFrame, eigenvector_results_df: pd.Dat
                 gn_results_df: pd.DataFrame, gn_summary_df: pd.DataFrame, 
                 gn_hierarchy_df: pd.DataFrame, spectral_results_df: pd.DataFrame, 
                 spectral_summary_df: pd.DataFrame, hierarchical_results_df: pd.DataFrame,
-                hierarchical_summary_df: pd.DataFrame, validation_results: dict, G: nx.Graph):
+                hierarchical_summary_df: pd.DataFrame, validation_results: dict, G: nx.Graph, suffix: str = ""):
     """Save analysis results to files"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
     # Save degree centrality results
-    degree_csv_path = OUTPUT_DIR / f"degree_centrality_analysis_{timestamp}.csv"
+    degree_csv_path = OUTPUT_DIR / f"degree_centrality_analysis_{timestamp}{suffix}.csv"
     degree_results_df.to_csv(degree_csv_path, index=False)
     print(f"Results saved to: {degree_csv_path}")
     
     # Save eigenvector centrality results
-    eigen_csv_path = OUTPUT_DIR / f"eigenvector_centrality_analysis_{timestamp}.csv"
+    eigen_csv_path = OUTPUT_DIR / f"eigenvector_centrality_analysis_{timestamp}{suffix}.csv"
     eigenvector_results_df.to_csv(eigen_csv_path, index=False)
     print(f"Results saved to: {eigen_csv_path}")
     
     # Save Louvain community detection results
-    louvain_csv_path = OUTPUT_DIR / f"louvain_communities_analysis_{timestamp}.csv"
+    louvain_csv_path = OUTPUT_DIR / f"louvain_communities_analysis_{timestamp}{suffix}.csv"
     louvain_results_df.to_csv(louvain_csv_path, index=False)
     print(f"Results saved to: {louvain_csv_path}")
     
     # Save community summary
-    community_summary_csv_path = OUTPUT_DIR / f"louvain_community_summary_{timestamp}.csv"
+    community_summary_csv_path = OUTPUT_DIR / f"louvain_community_summary_{timestamp}{suffix}.csv"
     community_summary_df.to_csv(community_summary_csv_path, index=False)
     print(f"Louvain community summary saved to: {community_summary_csv_path}")
     
     # Save Girvan-Newman community detection results
-    gn_csv_path = OUTPUT_DIR / f"girvan_newman_communities_{timestamp}.csv"
+    gn_csv_path = OUTPUT_DIR / f"girvan_newman_communities_{timestamp}{suffix}.csv"
     gn_results_df.to_csv(gn_csv_path, index=False)
     print(f"Results saved to: {gn_csv_path}")
     
     # Save Girvan-Newman community summary
-    gn_summary_csv_path = OUTPUT_DIR / f"girvan_newman_summary_{timestamp}.csv"
+    gn_summary_csv_path = OUTPUT_DIR / f"girvan_newman_summary_{timestamp}{suffix}.csv"
     gn_summary_df.to_csv(gn_summary_csv_path, index=False)
     print(f"Girvan-Newman summary saved to: {gn_summary_csv_path}")
     
     # Save hierarchy analysis
-    gn_hierarchy_csv_path = OUTPUT_DIR / f"girvan_newman_hierarchy_{timestamp}.csv"
+    gn_hierarchy_csv_path = OUTPUT_DIR / f"girvan_newman_hierarchy_{timestamp}{suffix}.csv"
     gn_hierarchy_df.to_csv(gn_hierarchy_csv_path, index=False)
     print(f"Girvan-Newman hierarchy analysis saved to: {gn_hierarchy_csv_path}")
     
     # Save Spectral clustering results
-    spectral_csv_path = OUTPUT_DIR / f"spectral_clustering_communities_{timestamp}.csv"
+    spectral_csv_path = OUTPUT_DIR / f"spectral_clustering_communities_{timestamp}{suffix}.csv"
     spectral_results_df.to_csv(spectral_csv_path, index=False)
     print(f"Spectral clustering results saved to: {spectral_csv_path}")
     
     # Save Spectral clustering summary
-    spectral_summary_csv_path = OUTPUT_DIR / f"spectral_clustering_summary_{timestamp}.csv"
+    spectral_summary_csv_path = OUTPUT_DIR / f"spectral_clustering_summary_{timestamp}{suffix}.csv"
     spectral_summary_df.to_csv(spectral_summary_csv_path, index=False)
     print(f"Spectral clustering summary saved to: {spectral_summary_csv_path}")
     
     # Save Hierarchical clustering results
-    hierarchical_csv_path = OUTPUT_DIR / f"hierarchical_clustering_communities_{timestamp}.csv"
+    hierarchical_csv_path = OUTPUT_DIR / f"hierarchical_clustering_communities_{timestamp}{suffix}.csv"
     hierarchical_results_df.to_csv(hierarchical_csv_path, index=False)
     print(f"Hierarchical clustering results saved to: {hierarchical_csv_path}")
     
     # Save Hierarchical clustering summary
-    hierarchical_summary_csv_path = OUTPUT_DIR / f"hierarchical_clustering_summary_{timestamp}.csv"
+    hierarchical_summary_csv_path = OUTPUT_DIR / f"hierarchical_clustering_summary_{timestamp}{suffix}.csv"
     hierarchical_summary_df.to_csv(hierarchical_summary_csv_path, index=False)
     print(f"Hierarchical clustering summary saved to: {hierarchical_summary_csv_path}")
     
     # Save validation results
     if 'consistency' in validation_results:
-        consistency_csv_path = OUTPUT_DIR / f"centrality_consistency_validation_{timestamp}.csv"
+        consistency_csv_path = OUTPUT_DIR / f"centrality_consistency_validation_{timestamp}{suffix}.csv"
         validation_results['consistency'].to_csv(consistency_csv_path, index=False)
         print(f"Consistency validation saved to: {consistency_csv_path}")
     
     if 'bootstrap' in validation_results:
-        bootstrap_csv_path = OUTPUT_DIR / f"centrality_bootstrap_validation_{timestamp}.csv"
+        bootstrap_csv_path = OUTPUT_DIR / f"centrality_bootstrap_validation_{timestamp}{suffix}.csv"
         validation_results['bootstrap'].to_csv(bootstrap_csv_path, index=False)
         print(f"Bootstrap validation saved to: {bootstrap_csv_path}")
     
     if 'significance' in validation_results:
-        significance_csv_path = OUTPUT_DIR / f"centrality_significance_validation_{timestamp}.csv"
+        significance_csv_path = OUTPUT_DIR / f"centrality_significance_validation_{timestamp}{suffix}.csv"
         validation_results['significance'].to_csv(significance_csv_path, index=False)
         print(f"Significance validation saved to: {significance_csv_path}")
     
@@ -2983,7 +3234,7 @@ def save_results(degree_results_df: pd.DataFrame, eigenvector_results_df: pd.Dat
     # Add community agreement indicator (do Louvain and G-N assign to same community size?)
     combined_df['community_agreement'] = (combined_df['community_size'] == combined_df['gn_community_size']).astype(int)
     
-    combined_csv_path = OUTPUT_DIR / f"combined_centrality_analysis_{timestamp}.csv"
+    combined_csv_path = OUTPUT_DIR / f"combined_centrality_analysis_{timestamp}{suffix}.csv"
     combined_df.to_csv(combined_csv_path, index=False)
     print(f"Combined results saved to: {combined_csv_path}")
     
@@ -3043,25 +3294,32 @@ def save_results(degree_results_df: pd.DataFrame, eigenvector_results_df: pd.Dat
               f"Diff: {abs(int(row['rank_difference'])):2d} | "
               f"{community_info}")
     
-    # Save graph structure
-    graphml_path = OUTPUT_DIR / f"collection_graph_{timestamp}.graphml"
-    nx.write_graphml(G, graphml_path)
+    # Save graph structure (convert numpy types to native Python types for GraphML compatibility)
+    graphml_path = OUTPUT_DIR / f"collection_graph_{timestamp}{suffix}.graphml"
+    
+    # Create a copy of the graph with converted data types
+    G_copy = G.copy()
+    for u, v, data in G_copy.edges(data=True):
+        for key, value in data.items():
+            if hasattr(value, 'item'):  # numpy scalar
+                data[key] = value.item()
+            elif hasattr(value, 'dtype') or str(type(value)).startswith("<class 'numpy"):
+                data[key] = value.item() if hasattr(value, 'item') else bool(value)
+    
+    nx.write_graphml(G_copy, graphml_path)
     print(f"\nGraph saved to: {graphml_path}")
 
-def main():
-    """Main analysis pipeline"""
-    print("Starting NFT Collection Cluster Analysis")
-    print("=" * 60)
-    print("METHODS: Degree Centrality + Eigenvector Centrality Analysis")
-    print("OBJECTIVE: Identify collections with most shared holder relationships")
-    print("=" * 60)
+def run_complete_analysis(collections_df: pd.DataFrame, collection_holders: Dict[str, Set[str]], 
+                         suffix: str = "") -> None:
+    """
+    Run the complete analysis pipeline on given data
     
-    # Setup
-    setup_output_directory()
-    
-    # Load data
-    collections_df = load_collection_data()
-    collection_holders = load_holder_data()
+    Args:
+        collections_df: Collection metadata DataFrame
+        collection_holders: Holder data dictionary
+        suffix: Suffix to add to output file names
+    """
+    print(f"Processing {len(collections_df)} collections...")
     
     # Build graph
     G = build_similarity_graph(collections_df, collection_holders)
@@ -3142,11 +3400,78 @@ def main():
     
     # Save results
     save_results(degree_results_df, eigenvector_results_df, louvain_results_df, community_summary_df,
-                gn_results_df, gn_summary_df, gn_hierarchy_df, spectral_results_df, 
-                spectral_summary_df, hierarchical_results_df, hierarchical_summary_df, validation_results, G)
+                gn_results_df, gn_summary_df, gn_hierarchy_df,
+                spectral_results_df, spectral_summary_df,
+                hierarchical_results_df, hierarchical_summary_df,
+                validation_results, G, suffix=suffix)
+
+def main():
+    """Main analysis pipeline with dual runs (with and without outliers)"""
+    print("Starting NFT Collection Cluster Analysis")
+    print("=" * 60)
+    print("METHODS: Degree Centrality + Eigenvector Centrality Analysis")
+    print("OBJECTIVE: Identify collections with most shared holder relationships")
+    print("=" * 60)
     
-    print("\nAnalysis complete!")
-    print(f"Check {OUTPUT_DIR}/ for detailed results")
+    # Setup
+    setup_output_directory()
+    
+    # Load original data
+    collections_df_original = load_collection_data()
+    collection_holders = load_holder_data()
+    
+    # Detect outliers using z-score method
+    collections_df_filtered, outliers_df = detect_outliers_zscore(collections_df_original, z_threshold=3.0)
+    
+    # Filter collection_holders to match filtered collections
+    filtered_collection_ids = set(collections_df_filtered['collection_id'])
+    collection_holders_filtered = {
+        cid: holders for cid, holders in collection_holders.items() 
+        if cid in filtered_collection_ids
+    }
+    
+    print("\n" + "="*80)
+    print("ANALYSIS RUN 1: ALL COLLECTIONS (INCLUDING OUTLIERS)")
+    print("="*80)
+    print(f"Analyzing all {len(collections_df_original)} collections")
+    
+    # Run complete analysis on all data
+    run_complete_analysis(collections_df_original, collection_holders, suffix="_with_outliers")
+    
+    print("\n" + "="*100)
+    print("ANALYSIS RUN 2: FILTERED COLLECTIONS (OUTLIERS REMOVED)")
+    print("="*100)
+    print(f"Analyzing {len(collections_df_filtered)} collections (outliers removed)")
+    
+    # Run complete analysis on filtered data (without outliers)
+    run_complete_analysis(collections_df_filtered, collection_holders_filtered, suffix="_without_outliers")
+    
+    # Summary comparison
+    print("\n" + "="*80)
+    print("OUTLIER IMPACT SUMMARY")
+    print("="*80)
+    print(f"Original dataset: {len(collections_df_original)} collections")
+    print(f"Filtered dataset: {len(collections_df_filtered)} collections")
+    print(f"Outliers removed: {len(outliers_df)} collections ({len(outliers_df)/len(collections_df_original)*100:.1f}%)")
+    
+    if len(outliers_df) > 0:
+        print(f"\nOutliers (extreme holder counts):")
+        for _, outlier in outliers_df.iterrows():
+            print(f"  - {outlier['name'][:50]:50} ({outlier['owner_count']:,} holders)")
+    
+    print(f"\nBoth analyses saved to {OUTPUT_DIR}/")
+    print("Files ending with '_with_outliers' contain full dataset results")
+    print("Files ending with '_without_outliers' contain filtered dataset results")
+    
+    print("\n" + "="*80)
+    print("DUAL ANALYSIS COMPLETE!")
+    print("="*80)
+    print("Compare results between the two runs to understand outlier impact on:")
+    print("  - Community structure and detection")
+    print("  - Centrality rankings")
+    print("  - Network topology and density")
+    print("  - Statistical validation results")
+    print(f"\nCheck {OUTPUT_DIR}/ for detailed results")
 
 if __name__ == "__main__":
     main()
